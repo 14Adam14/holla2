@@ -27,12 +27,16 @@
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="203" id="6ch-Cz-9KK"/>
+                                    <constraint firstAttribute="height" constant="50" id="EgM-MN-YMc"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemGray6Color"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show Text">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="makeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mg7-nh-We9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,6 +48,10 @@
                             <constraint firstItem="cjp-S3-03H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wpX-a3-6yR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="hollaMiaLabel" destination="cjp-S3-03H" id="k8q-MJ-k1L"/>
+                        <outlet property="toggleButton" destination="1gg-a9-r74" id="caf-jG-YLN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
